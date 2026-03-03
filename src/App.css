@@ -1,0 +1,271 @@
+.card {
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.padre {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.tamaño-imagen {
+    width: 70%;
+    height: 500px;
+    margin-top: 50px;
+
+}
+
+.estilo-profile {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: blanchedalmond;
+}
+
+.caja-texto {
+    background-color: rgb(235, 231, 226);
+    border-color: gray;
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px;
+    border-width: 0px;
+    margin-bottom: 20px;
+
+}
+
+.caja-texto:focus {
+    outline: 1px solid cornflowerblue;
+    box-shadow: 0 0 10px cornflowerblue;
+}
+
+.btnform {
+    background-color: darkblue;
+    border-color: gray;
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px;
+    border-width: 0px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.links {
+    font-size: small;
+    text-align: center;
+}
+
+.caja-textorg {
+    background-color: rgb(235, 231, 226);
+    border-color: gray;
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    border-width: 0px;
+    margin-bottom: 20px;
+
+}
+
+.contenedor {
+    max-width: 1000px;
+    padding: 40px;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    background: #fff;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(129, 129, 129, 0.1);
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    background: #092c4c;
+    grid-column: span 2;
+    border-radius: 3px;
+
+    a {
+        color: #fff;
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    a:hover {
+        background: #1d85e8;
+        text-decoration: none;
+    }
+}
+
+.salir {
+    color: white;
+}
+
+.calendar-container {
+    height: 400px;
+    width: 70%;
+    max-width: 800px;
+    /* Por ejemplo, para limitar el ancho máximo */
+    margin: 0 auto;
+    /* Para centrar horizontalmente */
+    font-family: Arial, sans-serif;
+    margin-bottom: 350px;
+}
+
+/* MenuVertical.css */
+
+.menu-vertical {
+    position: fixed;
+    /* Fija el menú en la pantalla */
+    top: 0;
+    /* Posición desde la parte superior de la pantalla */
+    left: 0;
+    /* Posición desde la parte izquierda de la pantalla */
+    width: 200px;
+    /* Ancho del menú */
+    height: 100%;
+    /* Altura del menú (lo hace llenar toda la altura) */
+    background-color: #333;
+    /* Color de fondo del menú */
+    color: #fff;
+    /* Color del texto del menú */
+    padding: 20px;
+    /* Espaciado interno del menú */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho y alto del menú */
+}
+
+.menu-vertical ul {
+    list-style: none;
+    /* Elimina los puntos de lista predeterminados */
+    padding: 0;
+    /* Elimina el padding predeterminado de la lista */
+}
+
+.menu-vertical li {
+    margin-bottom: 10px;
+    /* Espaciado entre elementos de la lista */
+}
+
+/* Media Query para tamaños de pantalla más pequeños */
+@media screen and (max-width: 768px) {
+    .menu-vertical {
+        width: 100px;
+        /* Cambia el ancho del menú para pantallas más pequeñas */
+        padding: 10px;
+        /* Reduce el espacio interno del menú para pantallas más pequeñas */
+    }
+
+    .menu-vertical li {
+        margin-bottom: 5px;
+        /* Reduce el espaciado entre elementos de la lista para pantallas más pequeñas */
+    }
+}
+
+.table-container {
+    /* Ajusta el margen derecho para evitar el empalme con el menú vertical */
+    margin: 0 auto;
+    /* Centra el contenedor de la tabla horizontalmente */
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+
+    /* Centra horizontalmente los elementos dentro del contenedor */
+    height: 300px;
+    justify-content: center;
+    flex: 1;
+    /* Hacer que la tabla ocupe el espacio restante */
+    margin-right: 20px;
+    /* Espacio entre la tabla y el escudo */
+    width: 100%;
+    overflow-x: auto;
+    /* Agregar scroll horizontal si el contenido es demasiado ancho */
+}
+
+.escudo-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    /* Color y grosor del borde */
+    padding: 10px;
+    /* Espacio alrededor del escudo */
+    margin-top: 20px;
+    /* Espacio superior */
+    margin-right: 90px;
+    width: 20%;
+}
+
+.escudo {
+    width: 50%; /* Ajusta el tamaño del escudo según sea necesario */
+    max-width: 200px; /* Limita el tamaño máximo del escudo para evitar que sea demasiado grande en pantallas pequeñas */
+  }
+
+.card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table-wrapper {
+    width: 100%;
+  }
+  
+  .table {
+    width: 100%;
+  }
+
+  .horizontal-table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .table {
+    width: 100%;
+  }
+  
+  .table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .table tbody tr td {
+    flex: 1;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+
+  .vertical-table-container {
+    display: flex;
+    flex-direction: column; /* Organizar las filas en una columna */
+}
+
+.vertical-row {
+    display: flex;
+    flex-direction: column; /* Organizar las celdas en una columna */
+    border-bottom: 1px solid #ccc; /* Añadir bordes entre las filas */
+    padding: 10px 0; /* Espacio entre las filas */
+}
+
+.vertical-row > div {
+    padding: 5px 0; /* Espacio interno dentro de las celdas */
+}
+
+.button-container > button {
+    margin-right: 10px; /* Agrega un margen derecho de 10px entre cada botón */
+    margin-left: 10px; /* Agrega un margen derecho de 10px entre cada botón */
+}
